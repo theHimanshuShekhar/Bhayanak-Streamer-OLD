@@ -28,7 +28,11 @@ export default function RootLayout({
 }
 
 const NavBar: React.FC = () => {
-  return <div>Navbar</div>;
+  return (
+    <div className="flex justify-start">
+      <div className="text-4xl">Bhayanak Streamer</div>
+    </div>
+  );
 };
 
 const Footer: React.FC = () => {
