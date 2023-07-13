@@ -1,3 +1,9 @@
+import Search from "./search";
+
 export default function Home() {
-  return <div className="text-9xl">Bhayanak Streamer</div>;
+  return (
+    <div className="">
+      <Search />
+    </div>
+  );
 }
