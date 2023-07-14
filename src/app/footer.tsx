@@ -1,10 +1,10 @@
 const Footer: React.FC = () => {
   return (
-    <div className="container text-gray-300 p-0">
+    <div className="container p-0">
       <footer className="w-full py-4 md:flex md:items-center justify-between">
         <div className="flex flex-wrap gap-3 items-center mt-3 text-md font-medium">
           <a
-            href="https://github.com/theHimanshuShekhar/BhayanakBot/"
+            href="https://github.com/theHimanshuShekhar/Bhayanak-Streamer/"
             className="flex gap-2 hover:bg-gray-500 rounded-full px-2 py-1 align-middle"
           >
             <svg

@@ -12,7 +12,7 @@ export default function Search() {
       <input
         type="text"
         placeholder="Search or Create a room"
-        className="rounded-full grow p-3 focus:outline-none focus:ring-2 focus:ring-gray-500"
+        className="rounded-full grow p-3 focus:outline-none focus:ring-2 focus:ring-gray-500 hover:shadow hover:shadow-gray-500"
         onInput={handleInputTouch}
       />
       {inputTouched && (
