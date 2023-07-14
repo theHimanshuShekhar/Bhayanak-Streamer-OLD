@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Room {
+  id             String    @id @default(cuid())
+  name           String
+  description    String?
+  createdAt      DateTime  @default(now())
+  thumbUpdatedAt DateTime?
+  thumbNail      String?
+  streamer       String
+  viewers        Viewer[]
+}
+
+model Viewer {
+  id     String  @id
+  Room   Room?   @relation(fields: [roomId], references: [id])
+  roomId String?
+}
